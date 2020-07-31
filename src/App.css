@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-image: url('https://i.pinimg.com/originals/ad/68/aa/ad68aaf3aba030a1386f72a3b7162024.jpg');
+  color: 'blue';
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  background-size: cover;
+  /* background-position: center; */
 }
 
 .App-logo {
@@ -35,4 +42,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list {
+  background-color: rgb(192, 192, 192, 0.3);
+  width: 300px;
+  border: 1px solid;
+  border-radius: 1mm;
+  margin: 20px auto;
+}
+
+.header {
+  color: white;
+  background-color: black;
+  display: block;
+  padding-left: 16px;
+}
+
+.inputBar {
+  font-size: 150%;
+  display: block;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding: 16;
+  text-align: center;
 }
