@@ -11,6 +11,26 @@ class WeatherBox extends Component {
     return Math.ceil(temp_new);
   }
 
+  determineDirection(degree) {
+    if (degree > 330 && degree <= 30) {
+      return ' North';
+    } else if (degree > 30 && degree <= 60) {
+      return ' North East';
+    } else if (degree > 60 && degree <= 120) {
+      return 'East';
+    } else if (degree > 120 && degree <= 150) {
+      return ' South East';
+    } else if (degree > 150 && degree <= 210) {
+      return ' South';
+    } else if (degree > 210 && degree <= 240) {
+      return ' South West';
+    } else if (degree > 240 && degree <= 300) {
+      return ' West';
+    } else if (degree > 300 && degree <= 330) {
+      return ' North West';
+    }
+  }
+
   render() {
     return (
       <div style={{ color: 'white' }} className='list'>
@@ -22,8 +42,7 @@ class WeatherBox extends Component {
         <h5 style={{ margin: 0 }}>{this.props.desc}</h5>
         <p>
           Wind speed is {this.props.winds.speed} km/hr from{' '}
-          {this.props.winds.deg}
-          &deg;
+          {this.determineDirection(this.props.winds.deg)}
         </p>
         <p>
           And it feels like {this.converTemp(this.props.mains.feels_like)}&deg;
