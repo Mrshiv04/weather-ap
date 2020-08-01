@@ -9,11 +9,11 @@ class Title extends Component {
           <tbody>
             <tr>
               <td>
-                <img width='90' src='titleicon.png' alt='weatherIcon' />
+                <img width='70' src='titleicon.png' alt='weatherIcon' />
               </td>
               <td width='8' />
               <td>
-                <h3>Weather app</h3>
+                <h4>Weather App</h4>
               </td>
             </tr>
           </tbody>

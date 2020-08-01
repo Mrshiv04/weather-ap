@@ -55,7 +55,7 @@ class App extends Component {
           country: data.sys.country,
           desc: data.weather[0].description
         });
-        console.log(this.state.description);
+        console.log(this.state.desc);
       },
       error: (xhr, status, err) => {
         console.error('failure');
@@ -87,7 +87,7 @@ class App extends Component {
             backgroundColor: 'transparent'
           }}
           onChange={this.changeHandler}
-          placeholder='Enter Movie Name'
+          placeholder='Enter City Name'
         />
         <WeatherBox
           winds={this.state.wind}
