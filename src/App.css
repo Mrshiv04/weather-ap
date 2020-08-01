@@ -4,7 +4,7 @@
   color: 'blue';
   min-width: 100%;
   min-height: 100%;
-  position: fixed;
+  position: absolute;
   background-size: cover;
   /* background-position: center; */
 }
