@@ -55,7 +55,7 @@ class App extends Component {
           country: data.sys.country,
           desc: data.weather[0].description
         });
-        console.log(this.state.desc);
+        console.log(this.state.wind.deg);
       },
       error: (xhr, status, err) => {
         console.error('failure');

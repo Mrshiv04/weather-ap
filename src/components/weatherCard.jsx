@@ -12,7 +12,7 @@ class WeatherBox extends Component {
   }
 
   determineDirection(degree) {
-    if (degree > 330 && degree <= 30) {
+    if (degree > 330 || degree <= 30) {
       return ' North';
     } else if (degree > 30 && degree <= 60) {
       return ' North East';
