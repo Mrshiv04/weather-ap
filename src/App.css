@@ -1,12 +1,10 @@
 .App {
   text-align: center;
-  background-image: url('https://wallpapercave.com/wp/wp3113563.jpg');
   color: 'blue';
   min-width: 100%;
   min-height: 100%;
   position: absolute;
   background-size: cover;
-  /* background-position: center; */
 }
 
 .App-logo {
